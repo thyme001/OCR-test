@@ -12,7 +12,7 @@ import imutils
 import pandas as pd
 import xlsxwriter
 import shutil
-import pytesseractต้อง download โมเดลภาษาเพิ่มเติม ตามลิงค์นี้ https://github.com/UB-Mannheim/tesseract/wik
+import pytesseractต้อง download โมเดลภาษาเพิ่มเติม ตามลิงค์นี้ https://github.com/UB-Mannheim/tesseract/wiki
 (สามารถใช่ตัวล่าสุดได้แต่ในกรณีที่มีปัญหาให้ใช่้ 2024-05-19 Update Tesseract 5.4.0-rc2.)
 เมื่อลงโมเดลภาษาที่ต้องการเสร็จแล้ว
 จะมีการเรียกใช้ โดยใช้คำสั่ง
