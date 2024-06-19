@@ -44,5 +44,8 @@ pip install pdf2image
 pip install pytesseract
 pip install xlsxwriter
 pip install matplotlib
+pip install opencv-python
+pip install pandas 
 
-3)เรียกใช้งานไฟล์โดยใช้คำสั่ง python pyBKI.py
+
+3)เรียกใช้งานไฟล์โดยใช้คำสั่ง python BKI.py BKI-001
