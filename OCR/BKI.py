@@ -16,12 +16,9 @@ def main(args):
         return text_choice  # ส่งค่าตัวแรกใน args กลับออกจากฟังก์ชัน main()
 
 def read_file_based_on_choice(text_choice):
-    if text_choice == "BKI-001":
-        file_path_pixel = 'C:\\Users\\ASUS\\Desktop\\OCR\\pixels location\\BKI-test.xlsx'
-        return file_path_pixel  # Return the file path
-    else:
-        print("ข้อมูลที่ป้อนไม่ถูกต้อง")
-        return None  # Return None เพื่อบอกว่าไม่มีข้อมูลที่ถูกต้อง
+    file_path_pixel = f'C:\\Users\\ASUS\\Desktop\\OCR\\pixels location\\{text_choice}.xlsx'
+    return file_path_pixel
+
 
 def process_data(text_choice):
     result = read_file_based_on_choice(text_choice)
@@ -449,7 +446,7 @@ if __name__ == "__main__":
     # เรียกใช้ sys.argv[1:] เพื่อรับค่า argument ที่ส่งเข้ามาจาก command line
     text_choice = main(sys.argv[1:])
     print("Returned choice:", text_choice)
-    if text_choice == "BKI-001":
+    if text_choice == "BKI-test":
         processed_data = process_data(text_choice)
         if processed_data is not None:
             (x1_TYPE, y1_TYPE, x2_TYPE, y2_TYPE,
@@ -461,7 +458,7 @@ if __name__ == "__main__":
             x1_VAT, y1_VAT, x2_VAT, y2_VAT,
             x1_total, y1_total, x2_total, y2_total) = processed_data
             #print(f"x1_TYPE: {x1_TYPE}, y1_TYPE: {y1_TYPE}, x2_TYPE: {x2_TYPE}, y2_TYPE: {y2_TYPE}")
-            if text_choice == "BKI-001":
+            if text_choice == "BKI-test":
                 # ระบุโฟลเดอร์ที่มีไฟล์ภาพ
                 folder_path = 'test_BKI_JPG'
                 # ดึงรายการของไฟล์ภาพในโฟลเดอร์
