@@ -1,4 +1,5 @@
 ![enter image description here](https://cdn.discordapp.com/attachments/1263395471833960476/1303574825708814367/image.png?ex=672c4029&is=672aeea9&hm=3a5b85ae2a5cdfaffef769dbdf953b377eefc5b6755ea9ce05a28b9caff3ff38&)
+
 `main()` ทำงานดังนี้:
 
 1.  **รับ Argument**: ฟังก์ชันนี้รับพารามิเตอร์ `args` ซึ่งเป็น list ของ arguments ที่ส่งเข้ามาในฟังก์ชัน `main()` (เช่น ข้อความหรือตัวเลขหลายค่าในรูปของ list)
@@ -14,6 +15,7 @@
     -   `return text_choice` ส่งค่าของ `text_choice` ออกไปจากฟังก์ชัน ซึ่งทำให้ค่าตัวแรกของ arguments ถูกส่งกลับไปให้ตัวเรียกใช้ฟังก์ชัน `main()`
 
 ![enter image description here](https://cdn.discordapp.com/attachments/1263395471833960476/1303575844068921417/image.png?ex=672c411c&is=672aef9c&hm=46507a61e039bddf28becb4f0d31ff65e7cd93dae7001c85da8e2b0dadc261dd&)
+
 ฟังก์ชัน `read_file_based_on_choice(text_choice)` ทำงานดังนี้:
 
 1.  **สร้างเส้นทางไฟล์**:
@@ -28,6 +30,7 @@
 ฟังก์ชันนี้ใช้สร้าง path ไฟล์ตามชื่อที่ผู้ใช้ระบุ เพื่อให้ง่ายต่อการเข้าถึงไฟล์เฉพาะในระบบ
 
 ![enter image description here](https://cdn.discordapp.com/attachments/1263395471833960476/1303576192812843069/image.png?ex=672c416f&is=672aefef&hm=c7628b5d48d5c01e0c19c883826b8317e5e7aa37e2951da90096e6ca285323a4&)
+
 ฟังก์ชัน `process_data(text_choice)` ทำงานดังนี้:
 
 1.  **อ่านไฟล์ Excel**:
@@ -51,6 +54,7 @@
 ฟังก์ชันนี้ใช้สำหรับการประมวลผลข้อมูลจากไฟล์ Excel และแยกค่าออกมาเป็นตัวแปรที่ใช้งานในโปรแกรมได้
 
 ![enter image description here](https://cdn.discordapp.com/attachments/1263395471833960476/1303576585655423006/image.png?ex=672c41cd&is=672af04d&hm=ca395472d1846f41013582f1cca331fa5e06ba826feeadb8a9e00d401838adec&)
+
 ฟังก์ชัน `adjust_contours` มีไว้เพื่อปรับขอบของกรอบ (Contours) ตามค่าการปรับแต่ง (padding) ที่กำหนดไว้ในแต่ละมุม ซึ่งทำงานดังนี้:
 
 1.  **รับพารามิเตอร์**:
@@ -75,6 +79,7 @@
 ฟังก์ชันนี้ช่วยในการปรับขอบกรอบโดยเพิ่มระยะในแนวตั้งให้กับแต่ละมุมตามค่าที่กำหนดสำหรับใช้งานปรับแต่งขอบของกรอบให้แม่นยำ
 
 ![enter image description here](https://media.discordapp.net/attachments/1263395471833960476/1303577055706873878/image.png?ex=672c423d&is=672af0bd&hm=8cf9c4797c21744905ce42841dd71dcb6c90e33506c333079a062ffa3aab5eb3&=&format=webp&quality=lossless&width=528&height=662)
+
 ฟังก์ชัน `process_image` ใช้สำหรับค้นหากรอบ (contour) ที่ต้องการในภาพ จากนั้นปรับขอบและใช้การแปลง perspective เพื่อให้ได้ภาพที่ถูกตัดตามกรอบที่ต้องการ โดยมีขั้นตอนการทำงานดังนี้:
 
 1.  **แปลงภาพเป็น Grayscale**:
@@ -157,6 +162,7 @@
 ฟังก์ชัน `process_image` ทำการตรวจจับขอบ ปรับขอบ และแปลง perspective ของภาพโดยอิงจากกรอบที่ค้นหาได้
 
 ![enter image description here](https://cdn.discordapp.com/attachments/1263395471833960476/1303579386166906890/image.png?ex=672c4468&is=672af2e8&hm=2a81df5d7bee9e830c2525e7d09d7a13fd3b26996f84f65b532ce3bba3bfa32a&)
+
 ฟังก์ชัน `process_TYPE` นี้มีการทำงานเพื่อประมวลผลภาพที่ถูกส่งเข้ามา โดยมีขั้นตอนหลักดังนี้:
 
 1.  **กำหนดค่าความกว้างและความสูงใหม่**:
@@ -221,6 +227,7 @@
 -   พารามิเตอร์ `x1`, `y1`, `x2`, `y2` ควรกำหนดให้สอดคล้องกับตำแหน่งของข้อความในภาพ
 
 ![enter image description here](https://cdn.discordapp.com/attachments/1263395471833960476/1303584507215089715/image.png?ex=672c492d&is=672af7ad&hm=acec35ba6ffb46ead832f97d47753c6937d3a4b784b9aedf0e73d84bf721f39b&)
+
 ฟังก์ชัน `process_DATE_num` นี้ทำงานเพื่อดึงวันที่จากรูปภาพที่ถูกสแกน โดยมีขั้นตอนต่าง ๆ ดังนี้:
 
 1.  **ตัดรูปภาพตามพิกัด**:
@@ -297,6 +304,7 @@
 -   การใช้ `pytesseract` สามารถปรับการตั้งค่า (เช่น `--psm 6` หรือ `--oem 3`) ขึ้นอยู่กับรูปแบบของเอกสารที่ต้องการดึงข้อมูล
 
 ![enter image description here](https://cdn.discordapp.com/attachments/1263395471833960476/1303585076151455804/image.png?ex=672c49b5&is=672af835&hm=f4054e8933d0e485a5b441501a97170ff52216f07a2f48d6993552988ad8665c&)
+
 ฟังก์ชัน `process_DATE_Mtext` นี้มีขั้นตอนการทำงานเพื่อตรวจจับและดึงข้อความ (ในที่นี้คือวันที่) จากรูปภาพที่ถูกสแกน โดยมีการใช้ `pytesseract` ในการแปลงภาพเป็นข้อความและทำการปรับปรุงคุณภาพของภาพเพื่อให้ได้ผลลัพธ์ที่ดีขึ้น ก่อนที่ข้อความจะถูกดึงออกมา ขั้นตอนดังนี้:
 
 1.  **ตัดรูปตามพิกัด**:
@@ -354,6 +362,7 @@
 
 
 ![enter image description here](https://cdn.discordapp.com/attachments/1263395471833960476/1303585712607723581/image.png?ex=672c4a4d&is=672af8cd&hm=aa36d6b46f9d4e31b04d75be55c991952a1aef968d801f7fa99d6800829f5b73&)
+
 ฟังก์ชัน `process_NAME` นี้มีขั้นตอนการทำงานเพื่อดึงข้อมูลชื่อจากภาพที่ได้รับการตัดและประมวลผลแล้ว โดยใช้ OCR (Optical Character Recognition) ผ่าน `pytesseract` ขั้นตอนต่างๆ ที่เกิดขึ้นในฟังก์ชันมีดังนี้:
 
 ### ขั้นตอนการทำงาน:
@@ -443,6 +452,7 @@
 
 
 ![enter image description here](https://cdn.discordapp.com/attachments/1263395471833960476/1303586172219686972/image.png?ex=672c4aba&is=672af93a&hm=0e077822028bb382daf1c4af07632b4fa2c689ca9e53baab014cd2dd2d04069d&)
+
 ฟังก์ชัน `process_Policy` นี้จะทำการประมวลผลภาพที่ตัดมาเพื่อดึงข้อมูลเกี่ยวกับหมายเลขกรมธรรม์ (Policy Number) จากข้อความในภาพที่ได้รับการตัดและประมวลผลแล้วด้วย OCR (Optical Character Recognition) ผ่าน `pytesseract` ขั้นตอนที่ฟังก์ชันทำงานมีดังนี้:
 
 ### ขั้นตอนการทำงาน:
